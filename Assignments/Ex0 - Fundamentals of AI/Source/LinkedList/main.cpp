@@ -1,3 +1,8 @@
+#define _CRTDBG_MAP_ALLOC
+#include <stdlib.h>
+#include <crtdbg.h>
+
+
 #include "../Data Structures/LinkedList.h"
 
 #include <limits>
@@ -17,6 +22,8 @@ void printCString(char const* testString);
 
 int main()
 {
+    _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+
     // Get ready.
     fund::LinkedList<string> valueList;
     fund::LinkedList<char const*> pointerList;
