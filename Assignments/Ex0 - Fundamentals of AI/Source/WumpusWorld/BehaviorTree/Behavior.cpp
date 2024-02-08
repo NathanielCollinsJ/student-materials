@@ -1,26 +1,3 @@
-//! \file Behavior_TODO.cpp
-//! \brief Implements the <code>fundamentals::Behavior</code> abstract class.
-//! \author Jeremiah Blanchard with code from Cromwell D. Enage
-
-#include "Behavior.h"
-#include <queue>
-#include <stack>
-
-namespace ufl_cap4053 { namespace fundamentals {
-
-	unsigned Behavior::createdCount = 0;
-	unsigned Behavior::destroyedCount = 0;
-
-	unsigned Behavior::getCreatedCount()
-	{
-		return createdCount;
-	}
-
-	unsigned Behavior::getDestroyedCount()
-	{
-		return destroyedCount;
-	}
-
-	Behavior::Behavior(char const* _description) : TreeNode<const char*>(_description) { }
-
-}}  // namespace ufl_cap4053::fundamentals
+version https://git-lfs.github.com/spec/v1
+oid sha256:df5a85d4852a64cd5599924d45d3cb17dcfeea2bf4fd335d0e1666bce7ff68e2
+size 655
